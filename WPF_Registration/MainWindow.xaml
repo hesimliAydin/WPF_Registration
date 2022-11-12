@@ -1,0 +1,33 @@
+﻿<Window x:Class="WPF_Registration.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Registration"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Button Width="150" Height="150">
+            <Button.Background>
+                <ImageBrush ImageSource="/icons8-test-account-40.png"/>
+            </Button.Background>
+        </Button>
+        
+        <StackPanel Orientation="Horizontal">
+            <Label Margin="20" Content="Username" FontSize="25" FontStyle="Italic" Foreground="BlueViolet" ></Label>
+            <TextBox x:Name="userNameTxtB" Width="150" Height="40" FontSize="20"></TextBox>
+        </StackPanel>
+        <Label x:Name="userNameLbl" Content=""></Label>
+        
+        <StackPanel Orientation="Horizontal">
+            <Label  Margin="20" Content="Password" FontSize="25" FontStyle="Italic" Foreground="BlueViolet"></Label>
+            <PasswordBox x:Name="passwordBox" Width="150" Height="40" FontSize="25"></PasswordBox>
+        </StackPanel>
+        <Label x:Name="passwordLbl" Content=""></Label>
+        
+            <Button Width="170" Height="70" Content="Login" FontSize="20" FontStyle="Italic" Background="GreenYellow" Foreground="BlueViolet" Click="Button_Click"></Button>
+        
+        
+
+    </StackPanel>
+</Window>
